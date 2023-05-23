@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="main">
+        <div class="form">
+          <h1>Signup</h1>
+
+          <form action="">
+            <div class="field f1">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                placeholder="Your Name"
+                id="name"
+                pattern="[A-Z,a-z]{5,15}"
+                required
+              />
+            </div>
+            <div class="field f2">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Your Email"
+                id="email"
+                required
+                pattern="[a-z,0-9,@,.]{5,15}"
+              />
+            </div>
+            <div class="field f3">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                id="pass"
+                required
+                pattern="[A-Z,a-z,0-9,@,#]"
+              />
+            </div>
+            <div class="field f4">
+              <i class="fa-solid fa-key"></i>
+              <input
+                type="password"
+                placeholder="Repeat your password "
+                id="pass2"
+                pattern="[A-Z,a-z,0-9,@,#]"
+                required
+              />
+            </div>
+
+            <div class="agree-main">
+              <input class="check" type="checkbox" />
+              <span class="agree">
+                I agree all statements in
+                <span id="term"
+                  >Terms of <br />
+                  &nbsp;&nbsp; &nbsp; service
+                </span>
+              </span>
+            </div>
+
+            <a href="login.html">
+              <div class="btn"><p>Register</p></div>
+            </a>
+          </form>
+        </div>
+        <div class="img"></div>
+      </div>
+    </div>
+  </body>
+</html>
